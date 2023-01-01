@@ -15,6 +15,7 @@ body {
   background-color: var(--primary);
   font-family: 'Shadows Into Light', cursive;
   text-align: center;
+  min-width: 290px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
@@ -200,6 +201,13 @@ opacity: 0;
   width: 80%;
 }
 
+.mid-link {
+  text-decoration: none !important;
+}
+
+.mid-link:hover {
+  color: var(--hover);
+}
 
 
 /* contact form */
@@ -213,7 +221,8 @@ button, input {
   display: block;
   padding: 0.625em;
   margin-top: 5em;
-  margin-inline: 15%;
+  margin-inline: 18%;
+  min-width: 290px;
 }
 
 .container {
@@ -266,7 +275,10 @@ button, input {
 .home-button {
   color: var(--primary);
   text-decoration: none !important;
+}
 
+.home-button:hover {
+  color: var(--secondary);
 }
 
 .screen-header-right {
@@ -310,9 +322,8 @@ button, input {
 
 .app-contact {
   margin-top: auto;
-  font-size: 15px;
-  font-weight: 700;
-  color: mintcream;
+  font-size: 1.25rem;
+  color: var(--hover);
 }
 
 .app-form-group {
@@ -395,7 +406,6 @@ button, input {
 
 /* MEDIA */
 
-
 @media screen and (max-width: 480px){
 
   .navbar-nav {
@@ -457,6 +467,10 @@ button, input {
   .grid-layout {
     padding: 0.625em;
   }
+
+  .background {
+    margin: auto;
+  }
 }
 
 @media screen and (max-width:880px) {
@@ -492,5 +506,11 @@ button, input {
   .background {
     display: flex;
     min-height: 50vh;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .background {
+    margin-inline: 10%;
   }
 }
