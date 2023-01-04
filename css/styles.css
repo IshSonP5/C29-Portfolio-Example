@@ -1,4 +1,8 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 /*stylesheet*/
+
 
 
 /* base styles */
@@ -18,7 +22,6 @@ body {
   min-width: 290px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 @font-face {
   font-family: 'Shadows Into Light';
@@ -159,10 +162,10 @@ opacity: 0;
 
 .overlay:hover {
   opacity: 80%;
-  transition: .5;
+  transition: 150ms;
   transition-timing-function: ease-in-out;
   transition-duration: 200ms;
-  transition-delay: 0,2s;
+  transition-delay: 60ms;
 }
 
 .title {
